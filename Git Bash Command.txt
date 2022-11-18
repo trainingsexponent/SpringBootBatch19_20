@@ -1,0 +1,138 @@
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20
+$ git clone https://github.com/trainingsexponent/SpringBootBatch19_20.git
+Cloning into 'SpringBootBatch19_20'...
+warning: You appear to have cloned an empty repository.
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20
+$ ls
+SpringBootBatch19_20/
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20
+$ cd SpringBootBatch19_20/
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (master)
+$ git chechout -b "SpringBootNew"
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (master)
+$ git checkout -b "SpringBootNew"
+Switched to a new branch 'SpringBootNew'
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$ git status
+On branch SpringBootNew
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        JavaDemo/
+        demo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$ git add .
+warning: in the working copy of 'demo/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'demo/.mvn/wrapper/maven-wrapper.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'demo/mvnw', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'demo/mvnw.cmd', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'demo/pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'demo/src/main/java/com/example/demo/DemoApplication.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'demo/src/main/resources/application.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'demo/src/test/java/com/example/demo/DemoApplicationTests.java', LF will be replaced by CRLF the next time Git touches it
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$ git status
+On branch SpringBootNew
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   JavaDemo/.classpath
+        new file:   JavaDemo/.project
+        new file:   JavaDemo/.settings/org.eclipse.jdt.core.prefs
+        new file:   JavaDemo/bin/com/Test.class
+        new file:   JavaDemo/src/com/Test.java
+        new file:   demo/.gitignore
+        new file:   demo/.mvn/wrapper/maven-wrapper.jar
+        new file:   demo/.mvn/wrapper/maven-wrapper.properties
+        new file:   demo/mvnw
+        new file:   demo/mvnw.cmd
+        new file:   demo/pom.xml
+        new file:   demo/src/main/java/com/example/demo/DemoApplication.java
+        new file:   demo/src/main/resources/application.properties
+        new file:   demo/src/test/java/com/example/demo/DemoApplicationTests.java
+
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$ git commit -m "My Spring Boot Demo Project"
+[SpringBootNew (root-commit) 33232fb] My Spring Boot Demo Project
+ 14 files changed, 659 insertions(+)
+ create mode 100644 JavaDemo/.classpath
+ create mode 100644 JavaDemo/.project
+ create mode 100644 JavaDemo/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 JavaDemo/bin/com/Test.class
+ create mode 100644 JavaDemo/src/com/Test.java
+ create mode 100644 demo/.gitignore
+ create mode 100644 demo/.mvn/wrapper/maven-wrapper.jar
+ create mode 100644 demo/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 demo/mvnw
+ create mode 100644 demo/mvnw.cmd
+ create mode 100644 demo/pom.xml
+ create mode 100644 demo/src/main/java/com/example/demo/DemoApplication.java
+ create mode 100644 demo/src/main/resources/application.properties
+ create mode 100644 demo/src/test/java/com/example/demo/DemoApplicationTests.java
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$ git push
+fatal: The current branch SpringBootNew has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin SpringBootNew
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$  git push --set-upstream origin SpringBootNew
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (37/37), 60.33 KiB | 2.23 MiB/s, done.
+Total 37 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/trainingsexponent/SpringBootBatch19_20.git
+ * [new branch]      SpringBootNew -> SpringBootNew
+branch 'SpringBootNew' set up to track 'origin/SpringBootNew'.
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$ git status
+On branch SpringBootNew
+Your branch is up to date with 'origin/SpringBootNew'.
+
+nothing to commit, working tree clean
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 679 bytes | 5.00 KiB/s, done.
+From https://github.com/trainingsexponent/SpringBootBatch19_20
+   33232fb..51869fc  SpringBootNew -> origin/SpringBootNew
+Updating 33232fb..51869fc
+Fast-forward
+ A.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 A.txt
+
+Anonymous@DESKTOP-V239MAF MINGW64 ~/Documents/GitHub/SpringBootBatch19_20/SpringBootBatch19_20 (SpringBootNew)
+$
