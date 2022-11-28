@@ -1,7 +1,10 @@
 package com.example.demo.model;
 
+import java.util.Arrays;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 public class Student {
@@ -16,6 +19,37 @@ public class Student {
 	private String uname;
 	
 	private String pass;
+	
+	private String fname;
+	
+	private String ftype;
+	
+	@Lob
+	private byte[] fdata;
+	
+	public String getFname() {
+		return fname;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public String getFtype() {
+		return ftype;
+	}
+
+	public void setFtype(String ftype) {
+		this.ftype = ftype;
+	}
+
+	public byte[] getFdata() {
+		return fdata;
+	}
+
+	public void setFdata(byte[] fdata) {
+		this.fdata = fdata;
+	}
 
 	public int getSid() {
 		return sid;
@@ -60,7 +94,7 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [sid=" + sid + ", sname=" + sname + ", address=" + address + ", uname=" + uname + ", pass="
-				+ pass + "]";
+				+ pass + ", fname=" + fname + ", ftype=" + ftype + ", fdata=" + Arrays.toString(fdata) + "]";
 	}
 	
 	
