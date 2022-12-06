@@ -7,4 +7,6 @@ public class ApiEndpoints {
 	public static final String ALLROLE="/getAllRole";
 	
 	public static final String ADDEMPLOYEE = "/addEmp";
+	
+	public static final String LOGIN =  "/login"; 
 }
