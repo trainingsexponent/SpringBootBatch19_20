@@ -33,24 +33,7 @@ public class Login {
 	private EmployeeMaster employeeMaster;
 	
 	
-//	{
-//	    "uname":"admin",
-//	    "pass":"admin",
-//	    "employeeMaster":{
-//	        "empname":"Admin",
-//	        "address":"INDIA",
-//	        "contactno":"9876543210",
-//	        "emailid":"admin@gmial.com",
-//	        "gender":"male",
-//	        "active":1,
-//	        "deleted":0,
-//	        "createdby":"admin",
-//	        "role":{
-//	        "rid": 1,
-//	        "rolename": "admin"
-//	    }
-//	  }
-//	}
+
 
 
 }

@@ -37,17 +37,6 @@ public class EmployeeData {
 	@JoinColumn(name = "e_f_id")
 	private List<Buy> lbuy = new ArrayList<Buy>();
 	
-//	{
-//	    "emid":2,
-//	    "empname":"Ajas Shaikh",
-//	    "lbuy":[
-//	         {
-//	             "fbuyname":"GSK",
-//	             "buyrate":8.5,
-//	             "buyquantity":2,
-//	             "amount":2500
-//	         }
-//	        ]
-//	}
+}
 
 }
