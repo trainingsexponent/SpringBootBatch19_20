@@ -33,7 +33,7 @@ public class ExcelGenerator {
 		
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		
-		XSSFSheet sheet = workbook.createSheet("Emp Buy Data");
+		XSSFSheet sheet = workbook.createSheet("Buy Data");
 		
 		Font headerfont = workbook.createFont();
 		headerfont.setBold(true);
@@ -65,7 +65,7 @@ public class ExcelGenerator {
 		}
 		
 		workbook.write(out);
-		Path path = Paths.get("E:\\buy.xlsx");
+		Path path = Paths.get("E:\\Buy.xlsx");
 		Files.write(path, out.toByteArray());
 		
 		return new ByteArrayInputStream(out.toByteArray());

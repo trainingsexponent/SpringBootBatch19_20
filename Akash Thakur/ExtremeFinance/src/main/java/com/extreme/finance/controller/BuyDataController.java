@@ -10,12 +10,13 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.extreme.finance.model.Buy;
 import com.extreme.finance.service.BuyDataService;
 import com.extreme.finance.util.ExcelGenerator;
 
-@Repository
+@RestController
 public class BuyDataController {
 	
 	@Autowired
@@ -30,7 +31,7 @@ public class BuyDataController {
 		
 		HttpHeaders headers = new HttpHeaders();
 		
-		headers.add("Content-Disposition", "Attechment;filename-Buy.xlsx");
+		headers.add("Content-Disposition", "attachment;filename=Buy.xlsx");
 		
 		return ResponseEntity.ok().headers(headers).body(new InputStreamResource(in));
 	}
