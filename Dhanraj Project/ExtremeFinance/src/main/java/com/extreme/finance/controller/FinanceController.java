@@ -2,6 +2,7 @@ package com.extreme.finance.controller;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,13 +17,16 @@ import com.extreme.finance.service.FinaceMasterService;
 
 @RestController
 public class FinanceController {
+	
+	
+	private static final Logger LOGGER = Logger.getLogger(FinanceController.class);
 
 	@Autowired
 	private FinaceMasterService finaceMasterService;
 
 	@PostMapping(value = ApiEndpoints.FINANCEDATA)
 	public ResponseEntity<String> addFinanceData(@RequestBody FinanceMaster financeMaster) {
-		System.out.println("Finance Data In Controller---->" + financeMaster);
+		LOGGER.debug("Finance Data In Controller---->" + financeMaster);
 		FinanceMaster fMaster = finaceMasterService.addFinnaceData(financeMaster);
 		if (fMaster.getFid() > 0) {
 			return ResponseEntity.ok("Finance Data Added Successfully...!").status(HttpStatus.CREATED).build();

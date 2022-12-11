@@ -1,7 +1,7 @@
 package com.extreme.finance.serviceImpl;
 
 import java.time.LocalDateTime;
-
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,23 +13,27 @@ import com.extreme.finance.service.LoginService;
 @Service
 public class LoginServiceImpl implements LoginService {
 
+	private static final Logger LOGGER = Logger.getLogger(LoginServiceImpl.class);
+
 	@Autowired
 	private LoginRepository loginRepository;
 
 	@Override
 	public void addloginDateWithEmployee(Login login) {
 
-		System.out.println("login Service:" + login);
+		LOGGER.debug("Login Service : " + login);
 		LocalDateTime ldt = LocalDateTime.now();
 		login.getEmployeeMaster().setDateofjoin(ldt);
 		loginRepository.save(login);
+
+		LOGGER.info(" Login Data Save Sucessfully......");
 
 	}
 
 	@Override
 	public EmployeeMasterDto getLoginDate(String uname, String pass) {
 
-		System.out.println("In service Layer" + uname + "" + pass);
+		LOGGER.debug("In service Layer" + uname + "" + pass);
 		EmployeeMasterDto employeeMasterDto = new EmployeeMasterDto();
 		Login login = loginRepository.findByUnameAndPass(uname, pass);
 		if (login != null) {
@@ -40,7 +44,7 @@ public class LoginServiceImpl implements LoginService {
 
 		} else {
 			employeeMasterDto.setErrorMsg("Invalid Credenatial....");
-			System.out.println(employeeMasterDto);
+			LOGGER.info(employeeMasterDto);
 		}
 		return employeeMasterDto;
 

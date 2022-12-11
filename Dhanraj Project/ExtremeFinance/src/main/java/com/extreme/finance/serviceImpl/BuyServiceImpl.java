@@ -3,6 +3,7 @@ package com.extreme.finance.serviceImpl;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,12 +14,17 @@ import com.extreme.finance.service.BuyService;
 
 @Service
 public class BuyServiceImpl implements BuyService {
+	
+	
+
+	private static final Logger LOGGER = Logger.getLogger(BuyDataServiceImpl.class);
+
 	@Autowired
 	private BuyRepositry buyRepositry;
 
 	@Override
 	public void addBuyFinanceData(EmployeeData employeeData) {
-		System.out.println("Buy Finance In Service" + employeeData);
+		LOGGER.debug("Buy Finance In Service" + employeeData);
 		LocalDateTime date = LocalDateTime.now();
 		List<Buy> blist = employeeData.getLbuy();
 		for (Buy b : blist) {
