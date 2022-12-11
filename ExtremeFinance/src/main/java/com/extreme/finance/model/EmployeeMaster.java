@@ -2,12 +2,10 @@ package com.extreme.finance.model;
 
 import java.time.LocalDateTime;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -47,7 +45,6 @@ public class EmployeeMaster {
 	
 	private Integer deleted;
 	
-	@OneToOne(cascade = CascadeType.DETACH)
-	private Role role;
+
 	
 }
