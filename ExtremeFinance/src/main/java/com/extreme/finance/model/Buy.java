@@ -13,14 +13,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Setter
+@Entity
 @Getter
+@Setter
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
-@Entity
 public class Buy {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int bid;
@@ -31,7 +30,8 @@ public class Buy {
 	
 	private double buyrate;
 	
-	private Integer buyquantity;
+	private int buyquantity;
 	
 	private double amount;
+
 }

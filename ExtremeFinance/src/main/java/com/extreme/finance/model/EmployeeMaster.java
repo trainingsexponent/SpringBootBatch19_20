@@ -46,8 +46,7 @@ public class EmployeeMaster {
 	private Integer active;
 	
 	private Integer deleted;
-	
 	@OneToOne(cascade = CascadeType.DETACH)
-	private Role role;
+    private Role role;
 	
 }

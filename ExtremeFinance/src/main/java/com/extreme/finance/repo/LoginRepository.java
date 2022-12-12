@@ -7,7 +7,9 @@ import com.extreme.finance.model.Login;
 
 @Repository
 public interface LoginRepository extends JpaRepository<Login, Integer>{
-
+	
 	Login findByUnameAndPass(String uname,String pass);
 	
+	
+
 }

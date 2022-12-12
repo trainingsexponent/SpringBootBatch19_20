@@ -13,27 +13,23 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 @Entity
-@Setter
 @Getter
+@Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class FinanceMaster {
+public class Document {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int fid;
+	private int docid;
 	
-	private String fname;
+	private String dname;
 	
-	private String fdata;
+	private String docdata;
 	
-	private double frate;
+	private String docpath;
 	
-	private String fcompanyname;
+	private LocalDateTime  doccreateddate;
 	
-	private LocalDateTime fdate;
-	
-	private LocalDateTime udate;
-	
-	private double amount;
+	private boolean status;
 }

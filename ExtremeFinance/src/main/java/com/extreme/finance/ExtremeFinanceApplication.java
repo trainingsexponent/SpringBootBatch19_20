@@ -8,14 +8,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ExtremeFinanceApplication {
 
 	private static final Logger LOGGER = Logger.getLogger(ExtremeFinanceApplication.class);
-	
 	public static void main(String[] args) {
 		SpringApplication.run(ExtremeFinanceApplication.class, args);
-		LOGGER.debug("This is Debug");
-		LOGGER.info("This is Info");
-		LOGGER.error("This is Error");
-		LOGGER.fatal("This is Fatal");
-		System.out.println("----------------------------------------");
+		
+		LOGGER.debug("This Is Debug");
+		LOGGER.info("This Is Info");
+		LOGGER.error("This Is Error");
+		LOGGER.fatal("This Is Fatal");
+		System.out.println("--------------------");
+		
 	}
 
 }

@@ -16,24 +16,22 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
 @Entity
 @Setter
 @Getter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeData {
+public class EmployeeDocument {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int edid;
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int edoid;
+	
 	private int emid;
-
+	
 	private String empname;
-
 	@OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "e_b_id")
-	private List<Buy> lbuy = new ArrayList<Buy>();
+	@JoinColumn(name = "e_d_id")
+	private List<Document> edocument = new ArrayList<Document>();
 
 }
