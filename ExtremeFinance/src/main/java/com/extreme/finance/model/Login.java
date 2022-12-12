@@ -12,44 +12,20 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
-@Setter
+@Entity
 @Getter
+@Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 public class Login {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int lid;
 	
 	private String uname;
 	
 	private String pass;
-	
 	@OneToOne(cascade = CascadeType.ALL)
 	private EmployeeMaster employeeMaster;
-	
-	
-//	{
-//	    "uname":"admin",
-//	    "pass":"admin",
-//	    "employeeMaster":{
-//	        "empname":"Admin",
-//	        "address":"INDIA",
-//	        "contactno":"9876543210",
-//	        "emailid":"admin@gmial.com",
-//	        "gender":"male",
-//	        "active":1,
-//	        "deleted":0,
-//	        "createdby":"admin",
-//	        "role":{
-//	        "rid": 1,
-//	        "rolename": "admin"
-//	    }
-//	  }
-//	}
-
 }

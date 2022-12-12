@@ -1,6 +1,5 @@
 package com.extreme.finance.model;
 
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,17 +10,20 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+
 @Entity
 @Getter
 @Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class Role {
+public class Department {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int rid;
+	private int did;
 	
-	private String rolename;
+	private String deptname;
+	
+	private String designation;
 
 }

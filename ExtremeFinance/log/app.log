@@ -1,0 +1,12 @@
+2022-12-11 23:58:055restartedMain  -DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-11 23:58:055restartedMain  -INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-11 23:58:055restartedMain  -ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-11 23:58:055restartedMain  -FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-11 23:59:059restartedMain  -DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-11 23:59:059restartedMain  -INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-11 23:59:059restartedMain  -ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-11 23:59:059restartedMain  -FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-12 00:00:039  restartedMain  -DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-12 00:00:039  restartedMain  -INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-12 00:00:039  restartedMain  -ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-12 00:00:039  restartedMain  -FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal

@@ -1,5 +1,6 @@
 package com.extreme.finance.model;
 
+import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,11 +18,13 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class Role {
+public class Loss {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int rid;
+	private int lid;
 	
-	private String rolename;
+	private double percentageLoss;
+	
+	private LocalDateTime lossdate;
 
 }
