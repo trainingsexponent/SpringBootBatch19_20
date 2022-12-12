@@ -18,22 +18,13 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class FinanceMaster {
+public class Profit {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int fid;
+	private int pid;
 	
-	private String fname;
+	private double perentageprofit;
 	
-	private String fdata;
-	
-	private double frate;
-	
-	private String fcompanyname;
-	
-	private LocalDateTime fdate;
-	
-	private LocalDateTime udate;
-	
-	private double amount;
+	private LocalDateTime profitdate;
+
 }

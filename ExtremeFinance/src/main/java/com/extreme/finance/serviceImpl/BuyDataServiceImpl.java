@@ -14,10 +14,9 @@ public class BuyDataServiceImpl implements BuyDataService{
 
 	@Autowired
 	private BuyDataRepository buyDataRepository;
-	
 	@Override
 	public List<Buy> getBuyData() {
-		// TODO Auto-generated method stub
+		
 		return buyDataRepository.findAll();
 	}
 

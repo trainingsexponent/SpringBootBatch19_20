@@ -11,29 +11,28 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.extreme.finance.api.ApiEndpoint;
 import com.extreme.finance.model.Buy;
 import com.extreme.finance.service.BuyDataService;
 import com.extreme.finance.util.ExcelGenertor;
 
 @RestController
 public class BuyDataController {
-
 	@Autowired
 	private BuyDataService buyDataService;
 	
-	@GetMapping(value = "download/buy.xlsx")
+	@GetMapping(value = ApiEndpoint.BUYDATAREPORT)
 	public ResponseEntity<InputStreamResource> excelBuyDataReport() throws IOException{
 		List<Buy> blist = buyDataService.getBuyData();
 		
 		ByteArrayInputStream in = ExcelGenertor.excelGenerating(blist);
-		
 		HttpHeaders headers = new HttpHeaders();
-		headers.add("Content-Disposition", "attachment;filename=Buy.xlsx");
-	
+		headers.add("Content-Disposition", "attachment:filename=Buy.xlsx");
 		return ResponseEntity
 				.ok()
 				.headers(headers)
 				.body(new InputStreamResource(in));
+		
 	}
-	
+
 }

@@ -13,27 +13,18 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 @Entity
-@Setter
 @Getter
+@Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class FinanceMaster {
+public class Loss {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int fid;
+	private int lid;
 	
-	private String fname;
+	private double percentageLoss;
 	
-	private String fdata;
-	
-	private double frate;
-	
-	private String fcompanyname;
-	
-	private LocalDateTime fdate;
-	
-	private LocalDateTime udate;
-	
-	private double amount;
+	private LocalDateTime lossdate;
+
 }

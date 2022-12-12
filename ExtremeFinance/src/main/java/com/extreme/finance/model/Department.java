@@ -1,7 +1,5 @@
 package com.extreme.finance.model;
 
-import java.time.LocalDateTime;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,28 +10,20 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+
 @Entity
-@Setter
 @Getter
+@Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class FinanceMaster {
+public class Department {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int fid;
+	private int did;
 	
-	private String fname;
+	private String deptname;
 	
-	private String fdata;
-	
-	private double frate;
-	
-	private String fcompanyname;
-	
-	private LocalDateTime fdate;
-	
-	private LocalDateTime udate;
-	
-	private double amount;
+	private String designation;
+
 }

@@ -10,23 +10,21 @@ import com.extreme.finance.repo.RoleRepository;
 import com.extreme.finance.service.RoleService;
 
 @Service
-public class RoleServiceImpl implements RoleService{
-
+public class RoleServiceImpl implements RoleService {
 	@Autowired
 	private RoleRepository roleRepository;
-	
+
 	@Override
 	public void addRole(Role role) {
-		// TODO Auto-generated method stub
 		System.out.println("In Role Service : " + role);
 		roleRepository.save(role);
+
 	}
 
 	@Override
 	public List<Role> getAllRole() {
-		// TODO Auto-generated method stub
-		return roleRepository.findAll();
+		return	roleRepository.findAll();
+		 
 	}
 
-	
 }
