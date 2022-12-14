@@ -46,3 +46,47 @@
 2022-12-11 15:01:027restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
 2022-12-11 15:01:027restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
 2022-12-11 15:01:027restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 09:19:057restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 09:19:057restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 09:19:057restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 09:19:057restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:06:018restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:06:018restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:06:018restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:06:018restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:12:040restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:12:040restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:12:040restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:12:040restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:16:051restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:16:051restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:16:051restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:16:051restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:18:001restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:18:001restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:18:001restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:18:001restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:18:030restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:18:030restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:18:030restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:18:030restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:18:041restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:18:041restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:18:041restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:18:041restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:19:037restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:19:037restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:19:037restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:19:037restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:20:051restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:20:051restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:20:051restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:20:051restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:20:054restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:20:054restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:20:054restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:20:054restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal
+2022-12-14 10:41:020restartedMain    DEBUG-com.extreme.finance.ExtremeFinanceApplication:This is Debug
+2022-12-14 10:41:020restartedMain    INFO -com.extreme.finance.ExtremeFinanceApplication:This is Info
+2022-12-14 10:41:020restartedMain    ERROR-com.extreme.finance.ExtremeFinanceApplication:This is Error
+2022-12-14 10:41:020restartedMain    FATAL-com.extreme.finance.ExtremeFinanceApplication:This is Fatal

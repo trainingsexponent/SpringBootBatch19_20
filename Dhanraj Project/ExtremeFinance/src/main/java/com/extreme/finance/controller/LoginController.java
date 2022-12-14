@@ -34,5 +34,7 @@ public class LoginController {
 		EmployeeMasterDto employeeMasterDto = loginService.getLoginDate(login.getUname(), login.getPass());
 
 		return ResponseEntity.ok(employeeMasterDto);
+		
+		
 	}
 }
